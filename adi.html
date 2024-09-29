@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Recommendation System</title>
+    <link rel="stylesheet" href="adi.css">
+</head>
+<body style="background-image: url(z1.jpg);">
+    <div class="container"; style="background-image: url(z1.jpg);">
+        <h1>Fashion Recommendation System</h1>
+
+        <!-- Gender selection form -->
+        <div class="gender-select">
+            <label for="gender">Select your gender:</label>
+            <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+
+        <!-- Event selection form -->
+        <div class="event-select">
+            <label for="event-type">Select the event you're attending:</label>
+            <select id="event-type">
+                <option value="marriage">Marriage</option>
+                <option value="family_function">Family Function</option>
+                <option value="outing">Outing</option>
+                <option value="dating">Dating</option>
+                <option value="nightout">Night Out</option>
+                <option value="business">Business Meeting</option>
+            </select>
+            <button class="btn" onclick="getRecommendations()">Get Recommendations</button>
+        </div>
+
+        <!-- Recommendations section -->
+        <div class="recommendations">
+            <h3>Recommended Items:</h3>
+            <ul id="recommendations-list" class="recommendations-list"></ul>
+        </div>
+    </div>
+
+    <script src="adi.js"></script>
+</body>
+</html>
