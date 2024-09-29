@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Try-On Scanner with Model</title>
+  <link rel="stylesheet" href="ak.css">
+</head>
+<body>
+  <div class="container">
+    <h1>3D Try-On Scanner with Model</h1>
+    <div class="image-area">
+      <div id="scanner-line"></div>
+      <img id="uploadedImage" src="" alt="Upload Image" />
+    </div>
+    <input type="file" id="imageUploader" accept="image/*" />
+    <button onclick="startScan()">Start Scan</button>
+    
+    <!-- Container for 3D model -->
+    <div id="modelContainer"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="ak.js"></script>
+</body>
+</html>
